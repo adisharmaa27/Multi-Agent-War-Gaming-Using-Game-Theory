@@ -48,7 +48,8 @@ st.caption("Red (attacker: Attack / Hold) vs Blue (defender: Defend / Withdraw).
 st.markdown(
         """
         <style>
-        button[data-baseweb="tab"]:nth-of-type(4) { display: none !important; }
+        button[data-baseweb="tab"]:nth-of-type(4),
+        [data-testid="stTab"]:nth-child(4) { display: none !important; }
         </style>
         """,
         unsafe_allow_html=True,
