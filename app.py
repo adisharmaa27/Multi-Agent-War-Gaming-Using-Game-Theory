@@ -45,6 +45,14 @@ if up is not None and st.sidebar.button("Apply uploaded config"):
 st.title("Multi-Agent War Gaming Using Game Theory: Stage 1")
 st.caption("Red (attacker: Attack / Hold) vs Blue (defender: Defend / Withdraw). "
            "General-sum payoffs, four capability scenarios.")
+st.markdown(
+        """
+        <style>
+        button[data-baseweb="tab"]:nth-of-type(4) { display: none !important; }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
 
 t_pay, t_scn, t_all, t_sens, t_about = st.tabs(
     ["1. Payoffs (editable)", "2. Scenario results", "3. Combined view", "4. Sensitivity", "About"])
